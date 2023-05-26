@@ -13,14 +13,20 @@ const Main: React.FC = () => {
           </div>
         </div>
       </div>
-      <div className="w-1/2">
+      <div className="relative w-1/2">
         <div className="flex flex-row justify-between px-16 py-10">
           <div className="flex flex-row justify-between w-40">
             <div className="font-black text-main-blue">Home</div>
             <div className="font-black text-main-blue">Contents</div>
           </div>
-          <div className="flex justify-center items-center bg-main-blue rounded w-7 h-7 hover:animation-bounce">
+          <div className="flex justify-center items-center bg-main-blue rounded w-7 h-7 hover:animate-bounce-pulse m-0">
             <FaList color="white" />
+          </div>
+        </div>
+        <div className="absolute top-1/2 translate-y-half-turn left-1/2 translate-x-half-turn">
+          <div className="flex flex-col items-center">
+            <div>당신의 삶을</div>
+            <div>의미있게</div>
           </div>
         </div>
       </div>
