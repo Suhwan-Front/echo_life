@@ -27,17 +27,23 @@ const MainTitle: React.FC<MainTitleProps> = ({
   contentsHandleMouseLeave,
 }) => {
   return (
-    <div className="flex flex-row w-full">
+    <div className="flex lg:flex-row sm:flex-col w-full">
       <div
-        className={`w-1/2 bg-main-blue ${
+        className={`lg:w-1/2 bg-main-blue ${
           isHovered ? 'animate-bounce-horizontal' : ''
         }`}
       >
         <div className="flex justify-center items-center min-h-screen">
           <div>
-            <div className="text-white text-8xl font-thin">꿈에</div>
-            <div className="text-main-green text-8xl font-thin">GREEN</div>
-            <div className="text-white text-8xl font-thin">삶</div>
+            <div className="text-white text-8xl font-thin">프로젝트</div>
+            <div className="flex justify-center text-main-green text-8xl font-thin">
+              만들기
+            </div>
+            <div className="flex justify-center pt-10">
+              <button className="px-7 py-3 bg-main-white text-main-blue font-black">
+                프로젝트 만들기
+              </button>
+            </div>
           </div>
         </div>
       </div>
@@ -71,8 +77,8 @@ const MainTitle: React.FC<MainTitleProps> = ({
         </div>
         <div className="absolute top-1/2 translate-y-half-turn left-1/2 translate-x-half-turn">
           <div className="flex flex-col items-center">
-            <div className="text-main-blue text-6xl">당신의 삶을</div>
-            <div className="text-main-blue text-6xl">의미있게</div>
+            <div className="text-main-blue text-6xl font-black">펀딩</div>
+            <div className="text-main-blue text-6xl">참여하기</div>
             <button
               className="mt-10 px-5 py-2 bg-main-blue text-main-white font-black hover:animate-pulse"
               onMouseEnter={handleMouseEnter}
